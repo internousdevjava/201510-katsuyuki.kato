@@ -193,6 +193,8 @@ public class KisoKadai3 {
 					}
 					if (uwatui == 1)
 						bool = false; // 上書きモード
+					if (uwatui == 2)
+						bool = true; //追記モード
 				}
 
 				// ファイルの書き込み読み込み
@@ -217,9 +219,9 @@ public class KisoKadai3 {
 
 						System.out.println("書き込みました");
 
-					} catch (IOException ex) {
+					} catch (IOException ex){ 
 						// ex.printStackTrace();
-					}
+				}
 				} else { // kakiyomi==2のとき
 					// ファイルの読み込み
 					try {
